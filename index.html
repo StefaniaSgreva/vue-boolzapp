@@ -58,18 +58,18 @@
                     </div>
                 </header>
                 <div class="contacs">
-                    <div class="chat-item" v-for="(obj,i) in contacts" :key="i">
+                    <div class="chat-item" v-for="(obj,i) in contacts" :key="i" @click="activeIndex = i">
                         <div class="R d-flex">
                             <div class="side-chat-img">
                                 <img :src="'./img/avatar' + obj.avatar + '.jpg'" :alt="contacts.name">
                             </div>
                             <div class="side-chat-info ms-3">
                                 <span class="user-name">{{contacts[i].name}}</span>
-                                <span class="side-chat-last-msg d-block">Ultimo messaggio inviato</span>
+                                <span class="side-chat-last-msg d-block">{{obj.messages[obj.messages.length-1].message}}</span>
                             </div>
                         </div>
                         <div class="L">
-                            <div class="side-chat-hour">12:00</div>
+                            <div class="side-chat-hour">{{obj.messages[obj.messages.length-1].date}}</div>
                         </div>
                     </div>                   
                 </div>
@@ -81,10 +81,10 @@
                     <div class="user d-flex">
                         <!-- SX - User info -->
                         <div class="avatar">
-                            <img src="./img/avatar_1.jpg" alt="User Avatar">
+                            <img :src="`img/avatar${contacts[activeIndex].avatar}.jpg`" :alt="contacts[activeIndex].name">
                         </div>
                         <div class="user-info ms-3">
-                            <span class="user-name">Michele</span>
+                            <span class="user-name">{{contacts[activeIndex].name}}</span>
                             <span class="d-block">Ultimo accesso oggi alle 12:00</span>
                         </div>
                     </div>
@@ -96,22 +96,12 @@
                     </div> 
                 </header>
                 <main class="chat">
-                    <div class="received">
-                        <span>Prova messaggio ricevuto</span>
-                        <span class="chat-time">12:00</span>
-                    </div>
-                    <div class="sent">
-                        <span>Prova messaggio inviato</span>
-                        <span class="chat-time">12:00</span>
-                    </div>
-                    <div class="sent">
-                        <span>Prova messaggio inviato</span>
-                        <span class="chat-time">12:00</span>
-                    </div>
-                    <div class="received">
-                        <span>Prova messaggio ricevuto</span>
-                        <span class="chat-time">12:00</span>
-                    </div>
+                    <div v-for="message in contacts[activeIndex].messages" class="conversations">
+                        <div :class="message.status === 'sent' ? 'sent' : 'received'">
+                            <span>{{message.message}}</span>
+                            <span class="chat-time">{{message.date}}</span>
+                        </div>
+                    </div> 
                 </main>
                 <footer class="main-footer">
                     <i class="fa-regular fa-face-smile"></i>
