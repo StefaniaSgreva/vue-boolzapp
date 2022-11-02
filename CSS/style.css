@@ -31,6 +31,7 @@ body{
     
 }
 .wrapper{
+    max-width: 1440px;
     height: 90%;
     width: 80%;
     background-color: var(--mid-gray);
@@ -133,7 +134,8 @@ i{
 .chat{
     width: 100%;
     height: calc(100% - 160px);
-    background-color: black;
+    background-image: url(../img/mine.jpg);
+    filter: invert();
     margin-top: 80px;
     overflow: auto;
     padding-top: 15px;
@@ -144,9 +146,28 @@ i{
     background-color: var(--mid-gray);
     position: absolute;
     bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
 }
-
-/* RESPONDIVE */
+.footer-container{
+    background-color: var(--light-gray);
+    width: 80%;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#type-message-input{
+    background: transparent;
+    width: 100%;
+    border: none;
+    margin-left: 20px;
+    color: var(--icon-gray);
+}
+/* RESPONSIVE */
 
  /* Desktop  */
  @media screen and (max-width:1200px) {
