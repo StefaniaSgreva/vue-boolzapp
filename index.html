@@ -61,7 +61,7 @@
                     <div class="chat-item" v-for="(obj,i) in contacts" :key="i">
                         <div class="R d-flex">
                             <div class="side-chat-img">
-                                <img :src="'./img/avatar' + obj.avatar + '.jpg'" :alt="obj.name">
+                                <img :src="'./img/avatar' + obj.avatar + '.jpg'" :alt="contacts.name">
                             </div>
                             <div class="side-chat-info ms-3">
                                 <span class="user-name">{{contacts[i].name}}</span>
@@ -96,6 +96,22 @@
                     </div> 
                 </header>
                 <main class="chat">
+                    <div class="received">
+                        <span>Prova messaggio ricevuto</span>
+                        <span class="chat-time">12:00</span>
+                    </div>
+                    <div class="sent">
+                        <span>Prova messaggio inviato</span>
+                        <span class="chat-time">12:00</span>
+                    </div>
+                    <div class="sent">
+                        <span>Prova messaggio inviato</span>
+                        <span class="chat-time">12:00</span>
+                    </div>
+                    <div class="received">
+                        <span>Prova messaggio ricevuto</span>
+                        <span class="chat-time">12:00</span>
+                    </div>
                 </main>
                 <footer class="main-footer">
                     <i class="fa-regular fa-face-smile"></i>
