@@ -1,5 +1,5 @@
 :root{
-    --dark-gray: #2a3942;
+    --dark-gray: #111b21;
     --mid-gray: #202c33;
     --light-gray: #2a3942;
     --icon-gray: #8696a0;
@@ -18,6 +18,7 @@
 body{
     font-family: 'Roboto', sans-serif;
     overflow: hidden;
+    color: white;
 }
 #app{
     width: 100%;
@@ -27,6 +28,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 .wrapper{
     height: 90%;
@@ -35,32 +37,79 @@ body{
     display: flex;
     position: relative;
 }
-
+i{
+    color: var(--icon-gray);
+    font-size: 22px;
+    margin-left: 30px;
+}
 /* SIDEBAR */
 #sidebar-contacts{
-    background-color: bisque;
     height: 100%;
     width: 35%;
     min-width: 300px;
     position: relative;
+    border-right: 1px solid var(--light-gray);
 }
 .my-account{
     width: 100%;
     height: 80px;;
-    background-color: gold;
+    background-color: var(--mid-gray);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+.avatar{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.avatar img{
+    width: 100%;
+}
+.user-name{
+    font-size: 20px;
 }
 .notice{
-    background-color: #53bdeb;
+    background-color: var(--blue);
     width: 100%;
     height: 90px;
+    padding: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 .search{
-    background-color: #8696a0;
+    background-color: var(--dark-gray);
     width: 100%;
     height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-container{
+    background-color: var(--mid-gray);
+    width: 95%;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.chat-search-btn{
+    border: none;
+    background: transparent;
+}
+#chat-search-input{
+    background: transparent;
+    width: 100%;
+    border: none;
+    margin-left: 20px;
+    color: var(--icon-gray);
 }
 .contacs{
-    background-color: brown;
+    background-color: var(--dark-gray);
     width: 100%;
     height: calc(100% - 240px);
     overflow: auto;
@@ -76,21 +125,43 @@ body{
 .main-header{
     width: 100%;
     height: 80px;
-    background-color: goldenrod;
+    background-color: var(--mid-gray);
     position: absolute;
     top: 0;
+    padding: 15px;
 }
 .chat{
     width: 100%;
     height: calc(100% - 160px);
-    background-color: lightgreen;
+    background-color: black;
     margin-top: 80px;
     overflow: auto;
+    padding-top: 15px;
 }
 .main-footer{
     width: 100%;
     height: 80px;
-    background-color: bisque;
+    background-color: var(--mid-gray);
     position: absolute;
     bottom: 0;
 }
+
+/* RESPONDIVE */
+
+ /* Desktop  */
+ @media screen and (max-width:1200px) {
+    
+}   
+ /* Tablet */
+ @media screen and (max-width:768px) {
+  
+ }
+ /* PHONE  */
+ @media screen and (max-width:576px) {
+   
+}
+ 
+
+
+
+

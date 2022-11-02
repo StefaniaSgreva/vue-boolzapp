@@ -23,20 +23,65 @@
 <body>
     <div id="app">
         <div class="wrapper">
+            <!-- SIDEBAR  -->
             <div id="sidebar-contacts">
                 <header class="side-header">
-                    <div class="my-account"></div>
-                    <div class="notice"></div>
-                    <div class="search"></div>
+                    <div class="my-account">
+                        <!-- SX - User image -->
+                        <div class="avatar">
+                            <img src="./img/avatar_io.jpg" alt="My Avatar">
+                        </div>   
+                        <!-- DX - Status, New Chat, Menu -->
+                        <div class="user-nav-sidebar">
+                            <i class="fa-solid fa-circle-notch"></i>
+                            <i class="fa-solid fa-message"></i>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div> 
+                    </div>
+                    <div class="notice">
+                        <div class="bell">
+                            <i class="fa-solid fa-bell-slash"></i>
+                        </div>
+                        <div class="text d-flex flex-column ms-3">
+                            <span>Ricevi notifiche di nuovi messaggi</span>
+                            <span>Attiva notifiche desktop</span>
+                        </div>
+                         
+                    </div>
+                    <div class="search">
+                        <div class="search-container">
+                            <button class="chat-search-btn">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                            <input type="text" id="chat-search-input" placeholder="Cerca o inizia una nuova chat">
+                        </div>
+                    </div>
                 </header>
                 <div class="contacs">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi, fugit! Quas, ipsam? Vitae odit quam quaerat, tenetur officia incidunt cumque! Corporis adipisci repellat at, aperiam cumque veniam alias corrupti nisi voluptatem unde animi quaerat magnam debitis architecto quas numquam odit eveniet beatae provident tempora. Reiciendis ut voluptatibus molestiae nam! Numquam perspiciatis exercitationem aperiam expedita tempore ipsa laudantium debitis officiis deserunt id! Corporis odio dolorum ullam alias quod, atque similique asperiores veritatis ratione at facilis, vel perferendis voluptas iure molestias. Unde odio modi exercitationem necessitatibus sapiente. Doloribus odit blanditiis laboriosam voluptate labore optio voluptates nulla animi ab soluta! Ratione dolores aliquam consequatur voluptatum sit officiis soluta rem molestias. Magni, voluptatem cupiditate rem nisi aliquid maiores reiciendis amet fugit ullam, explicabo eligendi, debitis doloribus eaque deleniti nam atque dolorem ipsum ut dolores vel? Nobis, omnis molestiae nihil neque iure aliquam eius quisquam odio voluptas minima cumque explicabo? Veritatis ratione laudantium quasi debitis aliquam optio? Dolor officiis quia atque corporis omnis repellendus cupiditate! Molestias soluta accusamus, sunt ut labore facere necessitatibus dolore quasi doloremque atque adipisci nesciunt nihil consectetur maiores. Sed, harum officiis. Sint incidunt mollitia, dolores explicabo dolor ut laboriosam porro atque voluptatibus eveniet fugiat iure dolorum dignissimos quos voluptatum, accusantium sed blanditiis cum aperiam vel. Eligendi quam illo dolore inventore ut saepe expedita repellat ab rem praesentium voluptate nobis laborum excepturi ea nihil, accusantium dolor delectus fugiat vero nisi ullam. Quos nam ut quaerat cupiditate laudantium doloribus! Aliquam architecto quis vitae laudantium quasi molestiae natus vel inventore, voluptatem quo. Veniam cupiditate reprehenderit voluptatibus magni fugit accusamus debitis, accusantium odio inventore, ratione quidem distinctio aliquam? Hic nulla voluptatum explicabo tempora eos ipsa quam deserunt pariatur. Illum eveniet perspiciatis aut quibusdam sint iste eligendi, blanditiis, atque molestias accusamus, nostrum corrupti. Pariatur at quia nam voluptatum officia ad ullam nobis accusamus! Deserunt quos repellat numquam placeat at ipsa in necessitatibus iusto quisquam architecto. Amet at ipsam quidem dicta quisquam repudiandae quam quia commodi eligendi tenetur, nulla magnam, qui tempora voluptas possimus ab illo laborum, hic asperiores! Aspernatur totam natus beatae doloribus alias tenetur error. Qui facere reiciendis ut! In minus eum sit repellendus sapiente, numquam sunt ut perferendis ad, maiores officiis, deserunt eius dicta. Explicabo distinctio enim nostrum voluptatem, voluptatum, tempore quo pariatur voluptatibus porro accusamus deserunt quia ut mollitia odit delectus dignissimos! Non ad officiis fugit necessitatibus corporis, minima aut libero quisquam voluptas architecto vitae sint blanditiis pariatur possimus dolore voluptates. Qui, corporis?</p>
                 </div>
             </div>
+
+            <!-- MAIN CHAT -->
             <div id="main-chat">
-                <header class="main-header"></header>
+                <header class="main-header d-flex justify-content-between align-items-center">
+                    <div class="user d-flex">
+                        <!-- SX - User info -->
+                        <div class="avatar">
+                            <img src="./img/avatar_1.jpg" alt="User Avatar">
+                        </div>
+                        <div class="user-info ms-3">
+                            <span class="user-name">Michele</span>
+                            <span class="d-block">Ultimo accesso oggi alle 12:00</span>
+                        </div>
+                    </div>
+                     <!-- DX - Search, Attach, Menu -->
+                     <div class="user-nav-main me-2">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-paperclip"></i>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div> 
+                </header>
                 <main class="chat">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut accusantium iusto enim inventore adipisci illo culpa dicta totam ipsum dolor! Expedita, esse? Velit, ducimus consequuntur laborum, aspernatur, odit a beatae illum repellat recusandae illo aliquam nihil at saepe neque? Possimus, rerum delectus deleniti molestias temporibus nulla est pariatur odio necessitatibus voluptatem. Labore, laborum iusto similique reiciendis quisquam cum eos quam quis quod illo dolores at aliquid accusamus officia expedita qui praesentium? Possimus cupiditate debitis quo odio molestias tenetur sunt non quos natus iusto, ducimus pariatur exercitationem quaerat unde fugit, consectetur maiores inventore dignissimos. Esse repudiandae laudantium, unde cumque recusandae aspernatur temporibus, sunt amet magni, ipsa qui ipsam expedita ratione voluptatum nobis ducimus modi? Rerum nobis architecto corporis facere distinctio blanditiis sequi delectus voluptatum at. Animi praesentium illum aspernatur rerum ad nemo enim atque recusandae temporibus doloremque totam minus deleniti, dignissimos nam nihil molestias sapiente asperiores debitis ut maiores omnis magni fugit consequuntur alias. At veritatis, eaque asperiores officiis ipsam consectetur dolorum reiciendis provident animi a harum eum. Laborum quis iste molestiae voluptas voluptates tempore aliquam optio amet dicta nulla assumenda a, eum, est, adipisci perferendis incidunt. Neque consectetur nemo cupiditate mollitia, magni explicabo ipsum iure voluptatem. Dolor reiciendis sapiente, facilis nihil cum sed mollitia a. Voluptas repellat inventore quasi corrupti exercitationem fugiat a vel esse doloremque, odio voluptatem in animi iure optio, explicabo temporibus, aliquam vitae harum quos corporis eveniet odit. Vero, expedita molestiae adipisci error accusamus beatae quam eos veniam, quod inventore ipsa voluptatem, voluptates ut consequatur! Earum exercitationem provident perferendis mollitia eveniet ipsa debitis dolore quos blanditiis et impedit, doloribus repellat odit reiciendis odio recusandae esse dicta nostrum incidunt aliquid ut nobis fugiat! Numquam, eum nobis! Assumenda, tempora enim voluptates maxime velit harum ea natus, hic ad error facilis dicta accusamus iusto quisquam placeat voluptatibus similique sed animi laboriosam! Itaque sint aperiam, repellendus aut tempora dolor ut assumenda quam ea vero asperiores quasi consequuntur dicta omnis at adipisci enim eligendi sunt ipsam cupiditate, saepe expedita quibusdam recusandae quas! Amet totam voluptatum recusandae repudiandae doloribus fugit iste rerum cumque possimus, consequuntur laudantium quae ut, accusamus facere ratione vitae odio. Nam assumenda repellendus dolores aperiam dolor cumque molestiae ea, officia at quisquam? Dolores impedit iusto, accusamus amet dolore eveniet quae delectus suscipit aliquam ex porro pariatur repellat non minima quibusdam facere illo tempore dolorem nisi labore quod inventore? Tempore molestias repellendus aspernatur qui, nihil eum doloremque omnis deleniti repellat incidunt veritatis blanditiis quos adipisci hic magnam expedita saepe asperiores dicta officia officiis debitis recusandae. Pariatur, quia dolorem tenetur, architecto quas modi ab totam cupiditate iusto ea distinctio optio obcaecati cumque esse adipisci voluptatem. Repellendus quod aut magni magnam distinctio quae voluptatum hic. Commodi esse incidunt ipsum fuga officia fugit totam adipisci rerum debitis tempore cumque velit dicta, quis ad architecto recusandae ipsa tempora molestias eius nobis, ducimus quaerat, quasi officiis eos! Voluptas, harum est nulla quasi consectetur blanditiis omnis consequatur beatae iure dolore iusto quas a illo laborum tenetur velit consequuntur! Aliquam soluta quod, placeat nihil odit deserunt accusamus. Delectus neque quasi dicta commodi deserunt nesciunt ex, dolorum, cumque harum suscipit numquam. Recusandae perspiciatis eaque, totam cum, minima assumenda commodi veniam voluptates impedit ipsum sapiente sunt laudantium praesentium quidem ullam, exercitationem numquam nihil? Quo modi ipsa distinctio quos, quae dignissimos qui quam facere hic totam. Eligendi iure, nesciunt doloribus eos dolor assumenda consequatur? Ad omnis laboriosam, iste alias mollitia id velit voluptatem, reiciendis, non aliquam quae libero sunt architecto commodi ab voluptates! Ut, beatae deserunt inventore iure deleniti, eveniet quos ipsam amet voluptatem aliquam, ullam incidunt autem ad. Sunt nesciunt saepe commodi nisi autem delectus fugit temporibus. Corporis consequuntur ab doloribus provident doloremque, ratione ducimus laudantium in soluta sed quidem repellendus. Ea totam sequi quae optio consectetur molestias dignissimos sed, aspernatur possimus alias ipsam magnam inventore laborum animi, nostrum pariatur, sit exercitationem. Beatae perferendis asperiores tempore ipsam voluptas aut dolorum quisquam saepe facere et qui, magni repellendus nesciunt libero veniam laudantium sint officia consequuntur cupiditate nobis repudiandae. Harum suscipit impedit neque, ipsa laborum, repellendus soluta mollitia quae quod vel vero provident repellat aliquam facilis obcaecati temporibus quidem assumenda eaque, rem architecto eveniet commodi maxime? Corporis consectetur nihil a accusantium amet unde beatae saepe perferendis enim necessitatibus sapiente deleniti accusamus excepturi commodi ratione labore asperiores, eos quisquam iure animi ab, ea repudiandae sit? Deleniti neque veniam animi? Sequi, quam labore quis at numquam perferendis repellat consequuntur exercitationem odio mollitia asperiores reprehenderit enim, natus corrupti? Quasi, quidem numquam similique voluptate non debitis repudiandae nam saepe ea harum quibusdam quisquam vel illo totam aliquam aperiam neque inventore iste officiis. Accusamus aut aliquam asperiores tempora voluptatem, pariatur aliquid quos ullam officia commodi nostrum eos alias, neque, minus similique minima. Quas porro est maiores facere molestiae neque atque exercitationem natus voluptas vero eos dolor perferendis quam expedita fugiat facilis ipsam doloribus ipsa eligendi, quasi consequuntur, consequatur possimus doloremque ex! Sapiente unde et maiores sequi est asperiores dolor, repellat eum, aperiam quidem molestiae id! Neque rerum est excepturi minima modi. Ipsa unde molestiae mollitia, ea inventore assumenda harum nobis ipsam minus nesciunt quasi omnis voluptatum neque eaque, repellendus officia aliquam consectetur vel earum labore maxime optio aliquid deleniti. Quo totam deleniti beatae quas quae doloremque reprehenderit in quidem nisi odit obcaecati officia vero aspernatur, aut magni aperiam, ducimus impedit sit nostrum dolorum. Modi, laboriosam optio ipsum nihil veniam dicta a? Sequi doloremque et odit consequatur provident adipisci fuga dolores asperiores obcaecati aspernatur! Necessitatibus, voluptate dolor, expedita eos officiis porro eligendi harum impedit mollitia dolores ut temporibus sit laudantium deleniti corrupti nostrum! Aperiam, totam esse accusantium quas provident quia placeat illo rerum eveniet laboriosam explicabo molestiae itaque dignissimos unde aspernatur veritatis voluptatem doloremque quos eligendi dolorum qui? Quibusdam, neque debitis. Quaerat ducimus non, sint nam unde aperiam? Illum natus explicabo voluptates architecto fugit beatae nihil fugiat hic possimus corrupti nostrum odit eum itaque voluptatum dolores, sapiente repellendus fuga saepe, accusantium praesentium nisi temporibus ducimus laudantium molestiae. Recusandae inventore laudantium excepturi nihil corrupti, magnam quasi adipisci totam aspernatur sint. Eveniet sit tenetur quam qui at quasi iusto veniam!</p>
                 </main>
                 <footer class="main-footer"></footer>
             </div>
