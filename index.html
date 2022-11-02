@@ -58,6 +58,20 @@
                     </div>
                 </header>
                 <div class="contacs">
+                    <div class="chat-item" v-for="(obj,i) in contacts" :key="i">
+                        <div class="R d-flex">
+                            <div class="side-chat-img">
+                                <img :src="'./img/avatar' + obj.avatar + '.jpg'" :alt="obj.name">
+                            </div>
+                            <div class="side-chat-info ms-3">
+                                <span class="user-name">{{contacts[i].name}}</span>
+                                <span class="side-chat-last-msg d-block">Ultimo messaggio inviato</span>
+                            </div>
+                        </div>
+                        <div class="L">
+                            <div class="side-chat-hour">12:00</div>
+                        </div>
+                    </div>                   
                 </div>
             </div>
 

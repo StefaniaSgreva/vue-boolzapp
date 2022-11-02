@@ -116,6 +116,33 @@ i{
     overflow: auto;
     padding-top: 15px;
 }
+.side-chat-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.side-chat-img img{
+    width: 100%;
+}
+.side-chat-last-msg,
+.side-chat-hour{
+    font-size: 14px;
+    color: var(--icon-gray);
+}
+.chat-item{
+    padding: 15px;
+    border-bottom: 1px solid var(--light-gray);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.chat-item:hover{
+    background-color: var(--light-gray);
+ 
+}
+
+
 /* MAIN */
 #main-chat{
     background-color: green;

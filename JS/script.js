@@ -5,9 +5,9 @@ const app = createApp({
         return {
             contacts:[
                 {
+                    id: 1,
                     name: 'Michele',
                     avatar: '_1',
-                    visible: true,
                     messages:[
                         {
                             date: '10/01/2020 15:30:55',
@@ -28,9 +28,9 @@ const app = createApp({
 
                 },
                 {
+                    id: 2,
                     name: 'Fabio',
                     avatar: '_2',
-                    visible: true,
                     messages: [
                         {
                             date: '20/03/2020 16:30:00',
@@ -50,9 +50,9 @@ const app = createApp({
                     ],
                 },
                 {
+                    id: 3,
                     name: 'Samuele',
                     avatar: '_3',
-                    visible: true,
                     messages: [
                         {
                             date: '28/03/2020 10:10:40',
@@ -73,9 +73,9 @@ const app = createApp({
                     
                 },
                 {
+                    id: 4,
                     name: 'Alessandro B.',
                     avatar: '_4',
-                    visible: true,
                     messages: [
                         {
                             date: '10/01/2020 15:30:55',
@@ -90,9 +90,9 @@ const app = createApp({
                     ],
                 },
                 {
+                    id: 5,
                     name: 'Alessandro L.',
                     avatar: '_5',
-                    visible: true,
                     messages: [
                         {
                             date: '10/01/2020 15:30:55',
@@ -107,9 +107,9 @@ const app = createApp({
                     ],
                 },
                 {
+                    id: 6,
                     name: 'Claudia',
                     avatar: '_6',
-                    visible: true,
                     messages: [
                         {
                             date: '10/01/2020 15:30:55',
@@ -125,6 +125,45 @@ const app = createApp({
                             date: '10/01/2020 15:51:00',
                             message: 'Nessuna nuova, buona nuova',
                             status: 'sent'
+                        }
+                    ],
+                },
+                {
+                    id: 7,
+                    name: 'Federico',
+                    avatar: '_7',
+                    messages: [
+                        {
+                            date: '10/01/2020 15:30:55',
+                            message: 'Fai gli auguri a Martina che è il suo compleanno!',
+                            status: 'sent'
+                        },
+                        {
+                            date: '10/01/2020 15:50:00',
+                            message: 'Grazie per avermelo ricordato, le scrivo subito!',
+                            status: 'received'
+                        }
+                    ],
+                },
+                {
+                    id: 8,
+                    name: 'Davide',
+                    avatar: '_8',
+                    messages: [
+                        {
+                            date: '10/01/2020 15:30:55',
+                            message: 'Ciao, andiamo a mangiare la pizza stasera?',
+                            status: 'received'
+                        },
+                        {
+                            date: '10/01/2020 15:50:00',
+                            message: 'No, l\'ho già mangiata ieri, ordiniamo sushi!',
+                            status: 'sent'
+                        },
+                        {
+                            date: '10/01/2020 15:51:00',
+                            message: 'OK!!',
+                            status: 'received'
                         }
                     ],
                 },
