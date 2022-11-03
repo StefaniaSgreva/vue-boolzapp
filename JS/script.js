@@ -6,25 +6,19 @@ const app = createApp({
             contacts:[
                 {
                     id: 1,
-                    name: 'Michele',
+                    name: 'Bianconiglio',
                     avatar: '_1',
                     messages:[
                         {
-                            date: '10/01/2020',
+                            date: '10/01/2042',
                             time: '12:00',
-                            message: 'Hai portato a spasso il cane?',
+                            message: 'Per quanto tempo è per sempre?',
                             status: 'sent'
                         },
                         {
-                            date: '10/01/2020',
-                            time: '12:00',
-                            message: 'Ricordati di stendere i panni',
-                            status: 'sent'
-                        },
-                        {
-                            date: '10/01/2020',
-                            time: '12:00',
-                            message: 'Tutto fatto!',
+                            date: '10/01/2042',
+                            time: '12:01',
+                            message: 'A volte, solo un secondo',
                             status: 'received'
                         }
                     ],
@@ -32,50 +26,62 @@ const app = createApp({
                 },
                 {
                     id: 2,
-                    name: 'Fabio',
+                    name: 'Tea Party',
                     avatar: '_2',
                     messages: [
                         {
                             date: '20/03/2020',
-                            time: '12:00',
-                            message: 'Ciao come stai?',
+                            time: 'Tea Time',
+                            message: 'Che ora è?',
                             status: 'sent'
                         },
                         {
                             date: '20/03/2020',
-                            time: '12:00',
-                            message: 'Bene grazie! Stasera ci vediamo?',
+                            time: 'Tea Time',
+                            message: "È l'ora del tè",
                             status: 'received'
                         },
                         {
                             date: '20/03/2020',
-                            time: '12:00',
-                            message: 'Mi piacerebbe ma devo andare a fare la spesa.',
+                            time: 'Tea Time',
+                            message: "È sempre l'ora del tè, e negli intervalli non abbiamo il tempo di lavare le tazze.",
                             status: 'sent'
                         }
                     ],
                 },
                 {
                     id: 3,
-                    name: 'Samuele',
+                    name: 'Cappellaio',
                     avatar: '_3',
                     messages: [
                         {
                             date: '28/03/2020',
                             time: '12:00',
-                            message: 'La Marianna va in campagna',
-                            status: 'received'
-                        },
-                        {
-                            date: '28/03/2020',
-                            time: '12:00',
-                            message: 'Sicuro di non aver sbagliato chat?',
+                            message: 'Ma allora se il mondo non ha assolutamente alcun senso, chi ci impedisce di inventarne uno?',
                             status: 'sent'
                         },
                         {
                             date: '28/03/2020',
                             time: '12:00',
-                            message: 'Ah scusa!',
+                            message: 'Il segreto cara Alice',
+                            status: 'received'
+                        },
+                        {
+                            date: '28/03/2020',
+                            time: '12:00',
+                            message: 'è circondarsi di persone che ti facciano sorridere il cuore...',
+                            status: 'received'
+                        },
+                        {
+                            date: '28/03/2020',
+                            time: '12:00',
+                            message: 'È allora, solo allora, che troverai...',
+                            status: 'received'
+                        },
+                        {
+                            date: '28/03/2020',
+                            time: '12:00',
+                            message: 'il Paese delle Meraviglie',
                             status: 'received'
                         }
                     ],
@@ -83,163 +89,103 @@ const app = createApp({
                 },
                 {
                     id: 4,
-                    name: 'Alessandro B.',
+                    name: 'Stregatto',
                     avatar: '_4',
                     messages: [
                         {
-                            date: '10/01/2020',
+                            date: '22/02/2022',
                             time: '12:00',
-                            message: 'Lo sai che ha aperto una nuova pizzeria?',
+                            message: 'Che strada devo prendere?',
                             status: 'sent'
                         },
                         {
-                            date: '10/01/2020',
+                            date: '22/02/2022',
                             time: '12:00',
-                            message: 'Si, ma preferirei andare al cinema',
+                            message: 'Dove vuoi andare?',
+                            status: 'received'
+                        },
+                        {
+                            date: '22/02/2022',
+                            time: '12:00',
+                            message: 'Non lo so',
+                            status: 'sent'
+                        },
+                        {
+                            date: '22/02/2022',
+                            time: '12:00',
+                            message: 'Allora, non ha importanza',
                             status: 'received'
                         }
                     ],
                 },
                 {
                     id: 5,
-                    name: 'Alessandro L.',
+                    name: 'Regina di Cuori',
                     avatar: '_5',
                     messages: [
                         {
                             date: '10/01/2020',
                             time: '12:00',
-                            message: 'Ricordati di chiamare la nonna',
-                            status: 'sent'
-                        },
-                        {
-                            date: '10/01/2020',
-                            time: '12:00',
-                            message: 'Va bene, stasera la sento',
+                            message: 'Una partita a cricket bambina?',
                             status: 'received'
                         }
                     ],
                 },
                 {
                     id: 6,
-                    name: 'Claudia',
+                    name: 'Brucaliffo',
                     avatar: '_6',
                     messages: [
                         {
                             date: '10/01/2020',
                             time: '12:00',
-                            message: 'Ciao Claudia, hai novità?',
+                            message: 'Ciao Brucaliffo, come stai?',
                             status: 'sent'
                         },
                         {
                             date: '10/01/2020',
                             time: '12:00',
-                            message: 'Non ancora',
+                            message: 'Chi essere, tu?',
                             status: 'received'
                         },
-                        {
-                            date: '10/01/2020',
-                            time: '12:00',
-                            message: 'Nessuna nuova, buona nuova',
-                            status: 'sent'
-                        }
                     ],
                 },
                 {
                     id: 7,
-                    name: 'Federico',
+                    name: 'Dina',
                     avatar: '_7',
                     messages: [
                         {
                             date: '10/01/2020',
                             time: '12:00',
-                            message: 'Fai gli auguri a Martina che è il suo compleanno!',
-                            status: 'sent'
-                        },
-                        {
-                            date: '10/01/2020',
-                            time: '12:00',
-                            message: 'Grazie per avermelo ricordato, le scrivo subito!',
+                            message: 'Maoh !',
                             status: 'received'
-                        }
+                        },
                     ],
                 },
                 {
                     id: 8,
-                    name: 'Davide',
+                    name: '+39 393 66 85 279',
                     avatar: '_8',
                     messages: [
                         {
                             date: '10/01/2020',
                             time: '12:00',
-                            message: 'Ciao, andiamo a mangiare la pizza stasera?',
+                            message: 'Non credere mai di essere altro che ciò che potrebbe sembrare ad altri che ciò che eri o avresti potuto essere non fosse altro che ciò che sei stata che sarebbe sembrato loro essere altro',
                             status: 'received'
                         },
                         {
                             date: '10/01/2020',
                             time: '12:00',
-                            message: 'No, l\'ho già mangiata ieri, ordiniamo sushi!',
+                            message: 'Chi sei?',
                             status: 'sent'
                         },
                         {
                             date: '10/01/2020',
                             time: '12:00',
-                            message: 'OK!!',
+                            message: 'Segui il coniglio bianco',
                             status: 'received'
                         },
-                        {
-                            date: '10/01/2020',
-                            time: '12:00',
-                            message: 'Ciao, andiamo a mangiare la pizza stasera?',
-                            status: 'received'
-                        },
-                        {
-                            date: '10/01/2020',
-                            time: '12:00',
-                            message: 'No, l\'ho già mangiata ieri, ordiniamo sushi!',
-                            status: 'sent'
-                        },
-                        {
-                            date: '10/01/2020',
-                            time: '12:00',
-                            message: 'OK!!',
-                            status: 'received'
-                        },
-                        {
-                            date: '10/01/2020',
-                            time: '12:00',
-                            message: 'Ciao, andiamo a mangiare la pizza stasera?',
-                            status: 'received'
-                        },
-                        {
-                            date: '10/01/2020',
-                            time: '12:00',
-                            message: 'No, l\'ho già mangiata ieri, ordiniamo sushi!',
-                            status: 'sent'
-                        },
-                        {
-                            date: '10/01/2020',
-                            time: '12:00',
-                            message: 'OK!!',
-                            status: 'received'
-                        },
-                        {
-                            date: '10/01/2020',
-                            time: '12:00',
-                            message: 'Ciao, andiamo a mangiare la pizza stasera?',
-                            status: 'received'
-                        },
-                        {
-                            date: '10/01/2020',
-                            time: '12:00',
-                            message: 'No, l\'ho già mangiata ieri, ordiniamo sushi!',
-                            status: 'sent'
-                        },
-                        {
-                            date: '10/01/2020',
-                            time: '12:00',
-                            message: 'OK!!',
-                            status: 'received'
-                        }
                     ],
                 },
             ],

@@ -44,7 +44,7 @@
                         <i class="fa-solid fa-bell-slash"></i>
                         <div class="text d-flex flex-column ms-3">
                             <span>Ricevi notifiche di nuovi messaggi</span>
-                            <span>Attiva notifiche desktop</span>
+                            <span class="desktop-notice">Attiva notifiche desktop</span>
                         </div>
                     </div>
                     <!--SEARCH INPUT -->
@@ -100,7 +100,7 @@
                 </header>
                 <!-- ACTIVE CHAT -->
                 <main class="chat">
-                    <div v-for="(message,index) in contacts[currentChat].messages" :key="index" class="conversations">
+                    <div class="conversations" v-for="(message,index) in contacts[currentChat].messages" :key="index">
                         <div :class="message.status">
                             <span>{{message.message}}</span>
                             <span class="chat-time">{{message.time}}</span>
