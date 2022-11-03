@@ -246,6 +246,7 @@ const app = createApp({
             currentChat: 0,  
             newMessage: '',
             searchTerm: '',
+           
         }
     },
     methods:{
@@ -255,7 +256,7 @@ const app = createApp({
         sendMessage(){
             if(!this.newMessage) return;
             const current = new Date();
-            const date = current.getDate()+'-'+(current.getMonth()+1)+'-'+current.getFullYear();
+            const date = current.getDate()+'/'+(current.getMonth()+1)+'/'+current.getFullYear();
             const time = current.getHours() + ":" + current.getMinutes();
             const newSentMessage ={
                 date: date,
@@ -284,7 +285,8 @@ const app = createApp({
             })
             console.log(arraymsg);
             return arraymsg[arraymsg.length -1];
-        }
+        },
+       
     },
     computed:{
         filteredContacts(){

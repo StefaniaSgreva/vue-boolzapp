@@ -92,7 +92,6 @@ i{
     border-radius: 50%;
     color: var(--wa-blue);
 }
-
 .search{
     background-color: var(--wa-dark-gray);
     width: 100%;
@@ -129,7 +128,6 @@ i{
     width: 100%;
     height: calc(100% - 240px);
     overflow: auto;
-    padding-top: 15px;
 }
 .side-chat-img{
     width: 50px;
@@ -142,7 +140,7 @@ i{
 }
 .side-chat-last-msg,
 .side-chat-hour{
-    font-size: 12px;
+    font-size: 14px;
     color: var(--wa-icon-gray);
 }
 .chat-item{
@@ -174,6 +172,10 @@ i{
     top: 0;
     padding: 15px;
 }
+.fa-phone{
+    padding-right: 25px;
+    border-right: 1px solid var(--wa-icon-gray);
+}
 .chat{
     width: 100%;
     height: calc(100% - 160px);
@@ -191,7 +193,7 @@ i{
 .chat-time{
     margin-left: 30px;
     padding-top: 10px;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: bold;
     color: var(--wa-icon-gray);
     text-align: end;
@@ -243,7 +245,7 @@ i{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 15px;
+    padding-right: 30px; 
 }
 .footer-container{
     background-color: var(--wa-light-gray);
@@ -266,6 +268,7 @@ i{
 #type-message-input:focus{
     outline:none;
 }
+
 
 /* RESPONSIVE */
 

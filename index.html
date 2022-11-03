@@ -36,7 +36,7 @@
                         <div class="user-nav-sidebar">
                             <i class="fa-solid fa-circle-notch"></i>
                             <i class="fa-solid fa-message"></i>
-                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                            <i class="fa-solid fa-ellipsis"></i>
                         </div> 
                     </div>
                     <!-- NOTIFICATIONS -->
@@ -90,11 +90,12 @@
                             <span class="d-block">Ultimo accesso {{getLastMessage(contacts[currentChat]).time}}</span>
                         </div>
                     </div>
-                     <!-- R - Search, Attach, Menu -->
+                     <!-- R - Video call, Call, Menu -->
                      <div class="user-nav-main me-2">
+                        <i class="fa-solid fa-video"></i>
+                        <i class="fa-solid fa-phone"></i>
+                        <i class="fa-solid fa-ellipsis"></i>
                         <i class="fa-solid fa-magnifying-glass"></i>
-                        <i class="fa-solid fa-paperclip"></i>
-                        <i class="fa-solid fa-ellipsis-vertical"></i>
                     </div> 
                 </header>
                 <!-- ACTIVE CHAT -->
@@ -105,6 +106,8 @@
                             <span class="chat-time">{{message.time}}</span>
                         </div>
                     </div> 
+
+                     
                 </main>
                 <!-- MAIN FOOTER - MSG INPUTS -->
                 <footer class="main-footer">
