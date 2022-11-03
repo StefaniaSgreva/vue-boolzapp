@@ -209,7 +209,6 @@ i{
 .conversations{
     display: flex;
     flex-direction: column;
-    /* row-gap: 10px; */
     padding: 10px 80px;
 }
 .chat-time{
@@ -218,7 +217,7 @@ i{
     font-size: 12px;
     font-weight: bold;
     color: var(--wa-icon-gray);
-    text-align: end;
+    align-self: flex-end;
 }
 .received{
     font-size: 14px;
