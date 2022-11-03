@@ -42,6 +42,20 @@ body{
     position: relative;
     box-shadow: 0 0 12px 0 var(--wa-light-gray);
 }
+::-webkit-scrollbar{
+    width: 1em;
+}
+::-webkit-scrollbar-track{
+   background: var(--wa-light-gray);
+}
+::-webkit-scrollbar-thumb{
+   background: var(--wa-icon-gray);
+   border-radius: 25vw;
+   border: .25em solid var(--wa-light-gray); 
+}
+::-webkit-scrollbar-thumb:hover{
+    background: var(--wa-dark-gray);   
+}
 i{
     color: var(--wa-icon-gray);
     font-size: 22px;
