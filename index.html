@@ -87,7 +87,7 @@
                         </div>
                         <div class="user-info ms-3">
                             <span class="user-name">{{contacts[currentChat].name}}</span>
-                            <span class="d-block">Ultimo accesso {{getLastMessage(contacts[currentChat]).date}}</span>
+                            <span class="d-block">Ultimo accesso {{getLastMessage(contacts[currentChat]).time}}</span>
                         </div>
                     </div>
                      <!-- R - Search, Attach, Menu -->
@@ -102,7 +102,7 @@
                     <div v-for="(message,index) in contacts[currentChat].messages" :key="index" class="conversations">
                         <div :class="message.status">
                             <span>{{message.message}}</span>
-                            <span class="chat-time">{{message.date}}</span>
+                            <span class="chat-time">{{message.time}}</span>
                         </div>
                     </div> 
                 </main>
