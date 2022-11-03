@@ -5,7 +5,7 @@ const app = createApp({
         return {
             contacts:[
                 {
-                    id: 0,
+                    id: 1,
                     name: 'Michele',
                     avatar: '_1',
                     messages:[
@@ -28,7 +28,7 @@ const app = createApp({
 
                 },
                 {
-                    id: 1,
+                    id: 2,
                     name: 'Fabio',
                     avatar: '_2',
                     messages: [
@@ -50,7 +50,7 @@ const app = createApp({
                     ],
                 },
                 {
-                    id: 2,
+                    id: 3,
                     name: 'Samuele',
                     avatar: '_3',
                     messages: [
@@ -73,7 +73,7 @@ const app = createApp({
                     
                 },
                 {
-                    id: 3,
+                    id: 4,
                     name: 'Alessandro B.',
                     avatar: '_4',
                     messages: [
@@ -90,7 +90,7 @@ const app = createApp({
                     ],
                 },
                 {
-                    id: 4,
+                    id: 5,
                     name: 'Alessandro L.',
                     avatar: '_5',
                     messages: [
@@ -107,7 +107,7 @@ const app = createApp({
                     ],
                 },
                 {
-                    id: 5,
+                    id: 6,
                     name: 'Claudia',
                     avatar: '_6',
                     messages: [
@@ -129,7 +129,7 @@ const app = createApp({
                     ],
                 },
                 {
-                    id: 6,
+                    id: 7,
                     name: 'Federico',
                     avatar: '_7',
                     messages: [
@@ -213,10 +213,13 @@ const app = createApp({
                     ],
                 },
             ],
-            activeIndex: 0,  
+            currentChat: 0,  
         }
     },
     methods:{
+        setChat(id){
+            this.currentChat = this.contacts.findIndex((item)=> item.id == id);
+        }
         
     },
     computed:{

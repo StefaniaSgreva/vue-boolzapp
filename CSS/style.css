@@ -83,7 +83,18 @@ i{
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    vertical-align:middle
 }
+.bell{
+    width: 40px;
+    height: 40px;
+    background-color: var(--wa-white);
+    border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
 .search{
     background-color: var(--wa-dark-gray);
     width: 100%;

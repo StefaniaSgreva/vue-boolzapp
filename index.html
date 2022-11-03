@@ -27,11 +27,11 @@
             <div id="sidebar-contacts">
                 <header class="side-header">
                     <div class="my-account">
-                        <!-- SX - User image -->
+                        <!-- L - User image -->
                         <div class="avatar">
                             <img src="./img/avatar_io.jpg" alt="My Avatar">
                         </div>   
-                        <!-- DX - Status, New Chat, Menu -->
+                        <!-- R - Status, New Chat, Menu -->
                         <div class="user-nav-sidebar">
                             <i class="fa-solid fa-circle-notch"></i>
                             <i class="fa-solid fa-message"></i>
@@ -46,7 +46,6 @@
                             <span>Ricevi notifiche di nuovi messaggi</span>
                             <span>Attiva notifiche desktop</span>
                         </div>
-                         
                     </div>
                     <div class="search">
                         <div class="search-container">
@@ -58,18 +57,18 @@
                     </div>
                 </header>
                 <div class="contacs">
-                    <div class="chat-item" :class="i === activeIndex ? 'active-chat' : ''" v-for="(obj,i) in contacts" :key="i" @click="activeIndex = i">
+                    <div class="chat-item" :class="index === currentChat ? 'active-chat' : ''" v-for="(item,index) in contacts" :key="item.id" @click="setChat(item.id)">
                         <div class="R d-flex">
                             <div class="side-chat-img">
-                                <img :src="'./img/avatar' + obj.avatar + '.jpg'" :alt="contacts.name">
+                                <img :src="'./img/avatar' + item.avatar + '.jpg'" :alt="item.name">
                             </div>
                             <div class="side-chat-info ms-3">
-                                <span class="user-name">{{contacts[i].name}}</span>
-                                <span class="side-chat-last-msg d-block">{{obj.messages[obj.messages.length-1].message}}</span>
+                                <span class="user-name">{{item.name}}</span>
+                                <span class="side-chat-last-msg d-block">{{item.messages[item.messages.length -1].message}}</span>
                             </div>
                         </div>
                         <div class="L">
-                            <div class="side-chat-hour">{{obj.messages[obj.messages.length-1].date}}</div>
+                            <div class="side-chat-hour">{{item.messages[item.messages.length -1].date}}</div>
                         </div>
                     </div>                   
                 </div>
@@ -81,10 +80,10 @@
                     <div class="user d-flex">
                         <!-- SX - User info -->
                         <div class="avatar">
-                            <img :src="`img/avatar${contacts[activeIndex].avatar}.jpg`" :alt="contacts[activeIndex].name">
+                            <img :src="'./img/avatar' + contacts[currentChat].avatar + '.jpg'" :alt="contacts[currentChat].name">
                         </div>
                         <div class="user-info ms-3">
-                            <span class="user-name">{{contacts[activeIndex].name}}</span>
+                            <span class="user-name">{{contacts[currentChat].name}}</span>
                             <span class="d-block">Ultimo accesso oggi alle 12:00</span>
                         </div>
                     </div>
@@ -96,8 +95,8 @@
                     </div> 
                 </header>
                 <main class="chat">
-                    <div v-for="message in contacts[activeIndex].messages" class="conversations">
-                        <div :class="message.status === 'sent' ? 'sent' : 'received'">
+                    <div v-for="(message,index) in contacts[currentChat].messages" :key="index" class="conversations">
+                        <div :class="message.status">
                             <span>{{message.message}}</span>
                             <span class="chat-time">{{message.date}}</span>
                         </div>
