@@ -5,7 +5,7 @@ const app = createApp({
         return {
             contacts:[
                 {
-                    id: 1,
+                    id: 0,
                     name: 'Michele',
                     avatar: '_1',
                     messages:[
@@ -28,7 +28,7 @@ const app = createApp({
 
                 },
                 {
-                    id: 2,
+                    id: 1,
                     name: 'Fabio',
                     avatar: '_2',
                     messages: [
@@ -50,7 +50,7 @@ const app = createApp({
                     ],
                 },
                 {
-                    id: 3,
+                    id: 2,
                     name: 'Samuele',
                     avatar: '_3',
                     messages: [
@@ -73,7 +73,7 @@ const app = createApp({
                     
                 },
                 {
-                    id: 4,
+                    id: 3,
                     name: 'Alessandro B.',
                     avatar: '_4',
                     messages: [
@@ -90,7 +90,7 @@ const app = createApp({
                     ],
                 },
                 {
-                    id: 5,
+                    id: 4,
                     name: 'Alessandro L.',
                     avatar: '_5',
                     messages: [
@@ -107,7 +107,7 @@ const app = createApp({
                     ],
                 },
                 {
-                    id: 6,
+                    id: 5,
                     name: 'Claudia',
                     avatar: '_6',
                     messages: [
@@ -129,7 +129,7 @@ const app = createApp({
                     ],
                 },
                 {
-                    id: 7,
+                    id: 6,
                     name: 'Federico',
                     avatar: '_7',
                     messages: [
@@ -146,7 +146,7 @@ const app = createApp({
                     ],
                 },
                 {
-                    id: 8,
+                    id: 7,
                     name: 'Davide',
                     avatar: '_8',
                     messages: [
@@ -213,8 +213,7 @@ const app = createApp({
                     ],
                 },
             ],
-            activeIndex: 0,
-            
+            activeIndex: 0,  
         }
     },
     methods:{

@@ -58,7 +58,7 @@
                     </div>
                 </header>
                 <div class="contacs">
-                    <div class="chat-item" v-for="(obj,i) in contacts" :key="i" @click="activeIndex = i">
+                    <div class="chat-item" :class="i === activeIndex ? 'active-chat' : ''" v-for="(obj,i) in contacts" :key="i" @click="activeIndex = i">
                         <div class="R d-flex">
                             <div class="side-chat-img">
                                 <img :src="'./img/avatar' + obj.avatar + '.jpg'" :alt="contacts.name">
