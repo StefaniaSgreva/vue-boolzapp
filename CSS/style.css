@@ -1,3 +1,4 @@
+/* GENERAL */
 :root{
     --wa-dark-gray: #111b21;
     --wa-mid-gray: #202c33;
@@ -85,14 +86,11 @@ i{
     align-items: center;
     vertical-align:middle
 }
-.bell{
-    width: 40px;
-    height: 40px;
-    background-color: var(--wa-white);
+.fa-bell-slash{
+    padding: 12px 10px;
+    background: var(--wa-white);
     border-radius: 50%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+    color: var(--wa-blue);
 }
 
 .search{
@@ -121,7 +119,7 @@ i{
     width: 80%;
     border: none;
     margin-left: 20px;
-    color: var(--icon-gray);
+    color: var(--wa-icon-gray);
 }
 #chat-search-input:focus{
     outline:none;
@@ -160,9 +158,7 @@ i{
 }
 .active-chat{
     background-color: var(--wa-light-gray);
-
 }
-
 
 /* MAIN */
 #main-chat{
@@ -185,13 +181,12 @@ i{
     filter: invert();
     margin-top: 80px; 
     overflow: auto;
-
 }
 .conversations{
     display: flex;
     flex-direction: column;
-    row-gap: 10px;
-    padding: 20px 80px;
+    /* row-gap: 10px; */
+    padding: 10px 80px;
 }
 .chat-time{
     margin-left: 30px;
@@ -271,6 +266,7 @@ i{
 #type-message-input:focus{
     outline:none;
 }
+
 /* RESPONSIVE */
 
  /* Desktop  */

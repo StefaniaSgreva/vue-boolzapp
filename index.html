@@ -25,6 +25,7 @@
         <div class="wrapper">
             <!-- SIDEBAR  -->
             <div id="sidebar-contacts">
+                <!-- SIDEBAR HEADER -->
                 <header class="side-header">
                     <div class="my-account">
                         <!-- L - User image -->
@@ -38,37 +39,38 @@
                             <i class="fa-solid fa-ellipsis-vertical"></i>
                         </div> 
                     </div>
+                    <!-- NOTIFICATIONS -->
                     <div class="notice">
-                        <div class="bell">
-                            <i class="fa-solid fa-bell-slash"></i>
-                        </div>
+                        <i class="fa-solid fa-bell-slash"></i>
                         <div class="text d-flex flex-column ms-3">
                             <span>Ricevi notifiche di nuovi messaggi</span>
                             <span>Attiva notifiche desktop</span>
                         </div>
                     </div>
+                    <!--SEARCH INPUT -->
                     <div class="search">
                         <div class="search-container">
                             <button class="chat-search-btn">
                                 <i class="fa-solid fa-magnifying-glass"></i>
                             </button>
-                            <input type="text" id="chat-search-input" placeholder="Cerca o inizia una nuova chat">
+                            <input type="text" id="chat-search-input" placeholder="Cerca o inizia una nuova chat" name="search" v-model.trim="searchTerm">
                         </div>
                     </div>
                 </header>
+                <!-- CONTACTS LIST -->
                 <div class="contacs">
-                    <div class="chat-item" :class="index === currentChat ? 'active-chat' : ''" v-for="(item,index) in contacts" :key="item.id" @click="setChat(item.id)">
+                    <div class="chat-item" :class="index === currentChat ? 'active-chat' : ''" v-for="(item,index) in  filteredContacts" :key="item.id" @click="setChat(item.id)">
                         <div class="R d-flex">
                             <div class="side-chat-img">
                                 <img :src="'./img/avatar' + item.avatar + '.jpg'" :alt="item.name">
                             </div>
                             <div class="side-chat-info ms-3">
                                 <span class="user-name">{{item.name}}</span>
-                                <span class="side-chat-last-msg d-block">{{item.messages[item.messages.length -1].message}}</span>
+                                <span class="side-chat-last-msg d-block">{{getLastMessage(item).message}}</span>
                             </div>
                         </div>
                         <div class="L">
-                            <div class="side-chat-hour">{{item.messages[item.messages.length -1].date}}</div>
+                            <div class="side-chat-hour">{{getLastMessage(item).date}}</div>
                         </div>
                     </div>                   
                 </div>
@@ -76,24 +78,26 @@
 
             <!-- MAIN CHAT -->
             <div id="main-chat">
+                <!-- MAIN HEADER -->
                 <header class="main-header d-flex justify-content-between align-items-center">
                     <div class="user d-flex">
-                        <!-- SX - User info -->
+                        <!-- L - User info -->
                         <div class="avatar">
                             <img :src="'./img/avatar' + contacts[currentChat].avatar + '.jpg'" :alt="contacts[currentChat].name">
                         </div>
                         <div class="user-info ms-3">
                             <span class="user-name">{{contacts[currentChat].name}}</span>
-                            <span class="d-block">Ultimo accesso oggi alle 12:00</span>
+                            <span class="d-block">Ultimo accesso {{getLastMessage(contacts[currentChat]).date}}</span>
                         </div>
                     </div>
-                     <!-- DX - Search, Attach, Menu -->
+                     <!-- R - Search, Attach, Menu -->
                      <div class="user-nav-main me-2">
                         <i class="fa-solid fa-magnifying-glass"></i>
                         <i class="fa-solid fa-paperclip"></i>
                         <i class="fa-solid fa-ellipsis-vertical"></i>
                     </div> 
                 </header>
+                <!-- ACTIVE CHAT -->
                 <main class="chat">
                     <div v-for="(message,index) in contacts[currentChat].messages" :key="index" class="conversations">
                         <div :class="message.status">
@@ -102,11 +106,12 @@
                         </div>
                     </div> 
                 </main>
+                <!-- MAIN FOOTER - MSG INPUTS -->
                 <footer class="main-footer">
                     <i class="fa-regular fa-face-smile"></i>
                     <i class="fa-solid fa-paperclip"></i>
                     <div class="footer-container ms-4">
-                        <input type="text" id="type-message-input" placeholder="Scrivi un messaggio">
+                        <input type="text" id="type-message-input" placeholder="Scrivi un messaggio" v-model.trim="newMessage" @keyup.enter="sendMessage">
                     </div>
                     <i class="fa-solid fa-microphone"></i>
                 </footer>

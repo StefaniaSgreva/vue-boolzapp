@@ -146,7 +146,7 @@ const app = createApp({
                     ],
                 },
                 {
-                    id: 7,
+                    id: 8,
                     name: 'Davide',
                     avatar: '_8',
                     messages: [
@@ -214,16 +214,52 @@ const app = createApp({
                 },
             ],
             currentChat: 0,  
+            newMessage: '',
+            searchTerm: '',
         }
     },
     methods:{
         setChat(id){
             this.currentChat = this.contacts.findIndex((item)=> item.id == id);
+        },
+        sendMessage(){
+            if(!this.newMessage) return;
+            const d = new Date();
+            let newDate = d.toDateString();
+            const newSentMessage ={
+                date: newDate,
+                message: this.newMessage,
+                status: 'sent'
+            }
+            this.contacts[this.currentChat].messages.push(newSentMessage);
+            this.newMessage = '';
+            setTimeout(()=>{
+                const d = new Date();
+                let newDate = d.toDateString();
+                const newSentMessage ={
+                    date: newDate,
+                    message: 'ok',
+                    status: 'received'
+                }
+            this.contacts[this.currentChat].messages.push(newSentMessage);
+            }, 1000);
+        },
+        getLastMessage(item){
+            const arraymsg = item.messages.filter((message)=>{
+                return message.status === 'received';
+            })
+            console.log(arraymsg);
+            return arraymsg[arraymsg.length -1];
         }
-        
     },
     computed:{
-        
+        filteredContacts(){
+            return this.contacts.filter((item)=>{
+                const name = item.name.toLowerCase();
+                console.log(name);
+                return name.includes(this.searchTerm.toLowerCase());
+            });
+        }
     },
     mounted(){
         console.log('in mounted');
