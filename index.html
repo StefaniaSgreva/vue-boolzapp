@@ -30,7 +30,7 @@
                     <div class="my-account">
                         <!-- L - User image -->
                         <div class="avatar">
-                            <img src="./img/avatar_io.jpg" alt="My Avatar">
+                            <img src="./img/avatar_io.PNG" alt="My Avatar">
                         </div>   
                         <!-- R - Status, New Chat, Menu -->
                         <div class="user-nav-sidebar">
@@ -62,7 +62,7 @@
                     <div class="chat-item" :class="index === currentChat ? 'active-chat' : ''" v-for="(item,index) in  filteredContacts" :key="item.id" @click="setChat(item.id)">
                         <div class="R d-flex">
                             <div class="side-chat-img">
-                                <img :src="'./img/avatar' + item.avatar + '.jpg'" :alt="item.name">
+                                <img :src="'./img/avatar' + item.avatar + '.PNG'" :alt="item.name">
                             </div>
                             <div class="side-chat-info ms-3">
                                 <span class="user-name">{{item.name}}</span>
@@ -83,7 +83,7 @@
                     <div class="user d-flex">
                         <!-- L - User info -->
                         <div class="avatar">
-                            <img :src="'./img/avatar' + contacts[currentChat].avatar + '.jpg'" :alt="contacts[currentChat].name">
+                            <img :src="'./img/avatar' + contacts[currentChat].avatar + '.PNG'" :alt="contacts[currentChat].name">
                         </div>
                         <div class="user-info ms-3">
                             <span class="user-name">{{contacts[currentChat].name}}</span>

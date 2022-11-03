@@ -201,8 +201,8 @@ i{
 .chat{
     width: 100%;
     height: calc(100% - 160px);
-    background-image: url(../img/mine.jpg);
-    filter: invert();
+    background-image: url(../img/dark_2.PNG);
+    /* filter: invert(); */
     margin-top: 80px; 
     overflow: auto;
 }
@@ -228,8 +228,8 @@ i{
     padding: 5px 10px;
     background-color: var(--wa-light-gray);
     align-self: flex-start;
-    filter: invert();
     display: flex;
+    position: relative;
 }
 .received::before{
     content: '';
@@ -248,8 +248,8 @@ i{
     padding: 5px 10px;
     background-color: var(--wa-chat-green);
     align-self: flex-end;
-    filter: invert();
     display: flex;
+    position: relative;
 }
 .sent::before{
     content: '';

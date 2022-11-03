@@ -219,7 +219,7 @@ const app = createApp({
                 const newSentMessage ={
                     date: date,
                     time: time,
-                    message: 'ok',
+                    message: 'Tutto è come appare essere. Niente è come appare essere.',
                     status: 'received'
                 }
             this.contacts[this.currentChat].messages.push(newSentMessage);
