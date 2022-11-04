@@ -196,7 +196,6 @@ const app = createApp({
                 index: null,
                 show: false,
             },
-            
            
         }
     },
@@ -241,7 +240,7 @@ const app = createApp({
                 return {
                     date: '10/01/2020',
                     time:'12:00',
-                    message: '',
+                    message: 'Messaggio cancellato',
                     status: 'received'
                 }
             }

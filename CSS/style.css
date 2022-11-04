@@ -225,14 +225,14 @@ i{
     font-size: 14px;
 }
 .menu-toggle {
-    /* display: none; */
+    display: none;
     position: absolute;
     top: 0;
     right: 10px;
 }
-/* .conversations:hover .menu-toggle {
+.conversations:hover .menu-toggle {
     display: block;
-} */
+}
 .box-menu{
     background-color: var(--wa-light-gray);
     padding: 10px;
