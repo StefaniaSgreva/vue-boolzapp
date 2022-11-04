@@ -165,6 +165,11 @@ i{
     font-size: 14px;
     color: var(--wa-icon-gray);
 }
+.side-chat-last-msg{
+    max-width: 200px;
+    height: 18px;
+    overflow: hidden;
+}
 .chat-item{
     padding: 15px;
     border-bottom: 1px solid var(--wa-light-gray);
@@ -202,7 +207,6 @@ i{
     width: 100%;
     height: calc(100% - 160px);
     background-image: url(../img/dark_2.PNG);
-    /* filter: invert(); */
     margin-top: 80px; 
     overflow: auto;
 }
@@ -210,9 +214,45 @@ i{
     display: flex;
     flex-direction: column;
     padding: 10px 80px;
+    position: relative;
+}
+.delete-msg{
+    position: absolute;
+    top: 0;
+    right: -60px;
+}
+.fa-chevron-down{
+    font-size: 14px;
+}
+.menu-toggle {
+    /* display: none; */
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+/* .conversations:hover .menu-toggle {
+    display: block;
+} */
+.box-menu{
+    background-color: var(--wa-light-gray);
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    box-shadow: 0 0 12px 0 var(--wa-dark-gray);
+}
+.cancel:hover{
+    text-decoration: underline;
+}
+.msg-txt{
+    text-align: justify;
 }
 .chat-time{
-    margin-left: 30px;
+    margin-left: 25px;
+    margin-top: 8px;
     padding-top: 10px;
     font-size: 12px;
     font-weight: bold;

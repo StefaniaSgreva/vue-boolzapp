@@ -192,6 +192,11 @@ const app = createApp({
             currentChat: 0,  
             newMessage: '',
             searchTerm: '',
+            msgOpt: {
+                index: null,
+                show: false,
+            },
+            
            
         }
     },
@@ -223,15 +228,37 @@ const app = createApp({
                     status: 'received'
                 }
             this.contacts[this.currentChat].messages.push(newSentMessage);
+
+            this.$nextTick(()=>{
+                const element = this.$refs.msg[this.$refs.msg.length - 1];
+                element.scrollIntoView();
+            })
             }, 1000);
         },
         getLastMessage(item){
-            const arraymsg = item.messages.filter((message)=>{
-                return message.status === 'received';
-            })
-            console.log(arraymsg);
-            return arraymsg[arraymsg.length -1];
+            const arraymsg = item.messages.filter((message) => message.status === 'received');
+            if (arraymsg.length == 0) {
+                return {
+                    date: '10/01/2020',
+                    time:'12:00',
+                    message: '',
+                    status: 'received'
+                }
+            }
+            return arraymsg[arraymsg.length - 1]
         },
+        removeMsg(index){
+            this.contacts[this.currentChat].messages.splice(index, 1);
+        },
+        sohowOption(index){
+            if(index === this.msgOpt.index && this.msgOpt.show){
+                this.msgOpt.index = null;
+                this.msgOpt.show = false;
+            } else {
+                this.msgOpt.index = index;
+                this.msgOpt.show = true;
+            }
+        }
        
     },
     computed:{
@@ -242,9 +269,6 @@ const app = createApp({
                 return name.includes(this.searchTerm.toLowerCase());
             });
         }
-    },
-    mounted(){
-        console.log('in mounted');
-    },
+    }
 });
 app.mount('#app');

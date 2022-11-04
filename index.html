@@ -100,12 +100,26 @@
                 </header>
                 <!-- ACTIVE CHAT -->
                 <main class="chat">
-                    <div class="conversations" v-for="(message,index) in contacts[currentChat].messages" :key="index">
+                    <div class="conversations" v-for="(message,index) in contacts[currentChat].messages" :key="index" ref="msg">
                         <div :class="message.status">
-                            <span>{{message.message}}</span>
+                            <span class="msg-txt">{{message.message}}</span>
                             <span class="chat-time">{{message.time}}</span>
+                            
+                            <!-- DELETE MENU -->
+                            <div class="menu-toggle">
+                                <i class="fa-solid fa-chevron-down" @click="sohowOption(index)"></i>
+                            </div>
+
+                            <div class="delete-msg" v-if="msgOpt.index === index && msgOpt.show">
+                                <div class="box-menu">
+                                    <div class="cancel" @click="removeMsg(index)">Elimina messaggio</div>
+                               </div>
+                            </div> 
                         </div>
-                    </div> 
+                    </div>
+
+                    
+                    
 
                      
                 </main>
