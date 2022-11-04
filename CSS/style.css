@@ -335,17 +335,31 @@ i{
 
 /* RESPONSIVE */
 
- /* Desktop  */
- @media screen and (max-width:1200px) {
-    
-}   
- /* Tablet */
- @media screen and (max-width:768px) {
-  
- }
  /* PHONE  */
  @media screen and (max-width:576px) {
-   
+    #main-chat{
+       /* display: none; */
+       width: 100%;
+    }
+    #sidebar-contacts{
+        width: 100%;
+       display: none;
+
+    }
+    .user-name{
+        font-size: 16px;
+    }
+    .last-acc{
+        font-size: 12px;
+    }
+    .fa-ellipsis,
+    .fa-magnifying-glass{
+        display: none;
+    }
+    .fa-phone{
+        border: none;
+    }
+
 }
  
 
