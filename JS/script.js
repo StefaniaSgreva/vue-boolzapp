@@ -30,20 +30,20 @@ const app = createApp({
                     avatar: '_2',
                     messages: [
                         {
-                            date: '20/03/2020',
-                            time: 'Tea Time',
+                            date: 'One day',
+                            time: 'TeaTime',
                             message: 'Che ora è?',
                             status: 'sent'
                         },
                         {
-                            date: '20/03/2020',
-                            time: 'Tea Time',
+                            date: 'One day',
+                            time: 'TeaTime',
                             message: "È l'ora del tè",
                             status: 'received'
                         },
                         {
-                            date: '20/03/2020',
-                            time: 'Tea Time',
+                            date: 'One day',
+                            time: 'TeaTime',
                             message: "È sempre l'ora del tè, e negli intervalli non abbiamo il tempo di lavare le tazze.",
                             status: 'sent'
                         }
@@ -55,31 +55,31 @@ const app = createApp({
                     avatar: '_3',
                     messages: [
                         {
-                            date: '28/03/2020',
+                            date: '28/03/2022',
                             time: '12:00',
                             message: 'Ma allora se il mondo non ha assolutamente alcun senso, chi ci impedisce di inventarne uno?',
                             status: 'sent'
                         },
                         {
-                            date: '28/03/2020',
+                            date: '28/03/2022',
                             time: '12:00',
                             message: 'Il segreto cara Alice',
                             status: 'received'
                         },
                         {
-                            date: '28/03/2020',
+                            date: '28/03/2022',
                             time: '12:00',
                             message: 'è circondarsi di persone che ti facciano sorridere il cuore...',
                             status: 'received'
                         },
                         {
-                            date: '28/03/2020',
+                            date: '28/03/2022',
                             time: '12:00',
                             message: 'È allora, solo allora, che troverai...',
                             status: 'received'
                         },
                         {
-                            date: '28/03/2020',
+                            date: '28/03/2022',
                             time: '12:00',
                             message: 'il Paese delle Meraviglie',
                             status: 'received'
@@ -124,7 +124,7 @@ const app = createApp({
                     avatar: '_5',
                     messages: [
                         {
-                            date: '10/01/2020',
+                            date: '10/01/2022',
                             time: '12:00',
                             message: 'Una partita a cricket bambina?',
                             status: 'received'
@@ -137,13 +137,13 @@ const app = createApp({
                     avatar: '_6',
                     messages: [
                         {
-                            date: '10/01/2020',
+                            date: '10/01/2022',
                             time: '12:00',
                             message: 'Ciao Brucaliffo, come stai?',
                             status: 'sent'
                         },
                         {
-                            date: '10/01/2020',
+                            date: '10/01/2022',
                             time: '12:00',
                             message: 'Chi essere, tu?',
                             status: 'received'
@@ -156,7 +156,7 @@ const app = createApp({
                     avatar: '_7',
                     messages: [
                         {
-                            date: '10/01/2020',
+                            date: '10/01/2022',
                             time: '12:00',
                             message: 'Maoh !',
                             status: 'received'
@@ -169,19 +169,19 @@ const app = createApp({
                     avatar: '_8',
                     messages: [
                         {
-                            date: '10/01/2020',
+                            date: '10/01/2022',
                             time: '12:00',
                             message: 'Non credere mai di essere altro che ciò che potrebbe sembrare ad altri che ciò che eri o avresti potuto essere non fosse altro che ciò che sei stata che sarebbe sembrato loro essere altro',
                             status: 'received'
                         },
                         {
-                            date: '10/01/2020',
+                            date: '10/01/2022',
                             time: '12:00',
                             message: 'Chi sei?',
                             status: 'sent'
                         },
                         {
-                            date: '10/01/2020',
+                            date: '10/01/2022',
                             time: '12:00',
                             message: 'Segui il coniglio bianco',
                             status: 'received'
