@@ -331,8 +331,44 @@ i{
 #type-message-input:focus{
     outline:none;
 }
-
-
+.welcome-msg{
+    text-align: center;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.welcome-msg h2{
+    font-weight: 300;
+    font-size: 34px;
+}
+.welcome-msg h6{
+    color: var(--wa-icon-gray);
+    font-size: 14px;
+    line-height: 1.6;
+    margin-top: 15px;
+}
+.cryptography{
+    color: var(--wa-icon-gray);
+    font-size: 14px;
+    position: absolute;
+    bottom: 50px;
+    opacity: .8;
+}
+.fa-lock{
+    font-size: 12px;
+    margin-right: 5px;
+}
+.welcome-img-bg{
+    width: 400px;
+    height: 200px;
+    background-color: #00a884;
+    margin-bottom: 50px;
+}
+.welcome-img{
+    transform: scale(1.3);
+}
 /* RESPONSIVE */
 
  /* PHONE  */

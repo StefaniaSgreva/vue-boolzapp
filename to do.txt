@@ -38,7 +38,7 @@ x I) fare scroll in giù in automatico fino al messaggio più recente, quando vi
 L) aggiungere le emoticons ai messaggi
 
 **Grafica**
-A) visualizzare un messaggio di benvenuto che invita l'utente a selezionare un contatto dalla lista per visualizzare i suoi messaggi, anziché attivare di default la prima conversazione
+x A) visualizzare un messaggio di benvenuto che invita l'utente a selezionare un contatto dalla lista per visualizzare i suoi messaggi, anziché attivare di default la prima conversazione
 B) aggiungere una splash page visibile per 1s all'apertura dell'app
 C) rendere l'app responsive e fruibile anche su mobile: di default si visualizza solo la lista dei contatti e cliccando su un contatto si vedono i messaggi di quel contatto.
 D) aggiungere quindi un'icona con una freccia verso sinistra per tornare indietro, dalla visualizzazione della chat alla visualizzazione di tutti i contatti

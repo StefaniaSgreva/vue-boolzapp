@@ -189,13 +189,14 @@ const app = createApp({
                     ],
                 },
             ],
-            currentChat: 0,  
+            currentChat: -1,  
             newMessage: '',
             searchTerm: '',
             msgOpt: {
                 index: null,
                 show: false,
             },
+            
            
         }
     },
