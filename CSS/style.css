@@ -374,11 +374,15 @@ i{
  /* PHONE  */
  @media screen and (max-width:576px) {
     #main-chat{
-       /* display: none; */
+       display: none;
        width: 100%;
     }
     #sidebar-contacts{
         width: 100%;
+       /* display: none; */
+
+    }
+    .welcome-msg{
        display: none;
 
     }
