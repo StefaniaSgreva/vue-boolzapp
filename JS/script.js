@@ -195,9 +195,7 @@ const app = createApp({
             msgOpt: {
                 index: null,
                 show: false,
-            },
-            
-           
+            }
         }
     },
     methods:{
@@ -249,6 +247,7 @@ const app = createApp({
         },
         removeMsg(index){
             this.contacts[this.currentChat].messages.splice(index, 1);
+            this.msgOpt.index = false;
         },
         sohowOption(index){
             if(index === this.msgOpt.index && this.msgOpt.show){

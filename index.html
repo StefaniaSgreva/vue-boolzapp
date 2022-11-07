@@ -107,7 +107,7 @@
                             
                             <!-- DELETE MENU -->
                             <div class="menu-toggle">
-                                <i class="fa-solid fa-chevron-down" @click="sohowOption(index)"></i>
+                                <i class="fa-solid fa-chevron-down" @click.stop="sohowOption(index)"></i>
                             </div>
 
                             <div class="delete-msg" v-if="msgOpt.index === index && msgOpt.show">
@@ -130,8 +130,8 @@
                     <div class="footer-container ms-4">
                         <input type="text" id="type-message-input" placeholder="Scrivi un messaggio" v-model.trim="newMessage" @keyup.enter="sendMessage">
                     </div>
-                    <i class="fa-solid fa-microphone"></i>
-                    <!-- <i class="fa-solid fa-paper-plane"></i> -->
+                    <!-- <i v-if="" class="fa-solid fa-paper-plane" @click="sendMessage"></i> -->
+                    <i v-else class="fa-solid fa-microphone"></i>
                 </footer>
             </div>
             <div v-else class="welcome-msg">
