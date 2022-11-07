@@ -370,7 +370,31 @@ i{
     transform: scale(1.3);
 }
 /* RESPONSIVE */
-
+/* Medium */
+@media screen and (max-width:768px){
+    .welcome-img-bg{
+        width: 200px;
+        height: 100px;
+        margin-bottom: 50px;
+    }
+    .welcome-img{
+        width: 100%;
+    }
+    .welcome-msg h2{
+        font-size: 28px;
+    }
+    .welcome-msg h6{
+        font-size: 12px;
+        font-weight: 400;
+        text-align: justify;
+        margin: 0 30px;
+        padding-top: 20px;
+    }
+    .cryptography{
+       bottom: 30px;
+       font-size: 12px;
+    }
+}
  /* PHONE  */
  @media screen and (max-width:576px) {
     #main-chat{
